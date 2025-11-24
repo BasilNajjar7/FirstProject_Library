@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7oiJZtHPe0M=",
+  "dgSpecHash": "ivZL7E1hLGc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Basil\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library.csproj",
+  "projectFilePath": "C:\\Users\\Basil\\My-Github\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Basil\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Basil\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

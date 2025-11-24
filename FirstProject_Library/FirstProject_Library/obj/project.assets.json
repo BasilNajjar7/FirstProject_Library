@@ -5933,11 +5933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Basil\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library.csproj",
+      "projectUniqueName": "C:\\Users\\Basil\\My-Github\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library.csproj",
       "projectName": "FirstProject_Library",
-      "projectPath": "C:\\Users\\Basil\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library.csproj",
+      "projectPath": "C:\\Users\\Basil\\My-Github\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library.csproj",
       "packagesPath": "C:\\Users\\Basil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Basil\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\obj\\",
+      "outputPath": "C:\\Users\\Basil\\My-Github\\FirstProject_Library\\FirstProject_Library\\FirstProject_Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

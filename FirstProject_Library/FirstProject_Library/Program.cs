@@ -1,5 +1,7 @@
+using FirstProject_Library.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Abstractions;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.Resource;
@@ -20,7 +22,7 @@ namespace FirstProject_Library
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddDbContext<ApplicationDbContext>(b => b.UseSqlServer(builder.Configuration["ConnectionStrings:DefultConnection"]));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
