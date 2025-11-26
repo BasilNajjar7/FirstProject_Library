@@ -1,7 +1,6 @@
 ﻿using FirstProject_Library.Data;
 using FirstProject_Library.Model;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace FirstProject_Library.Controllers
 {
@@ -30,16 +29,24 @@ namespace FirstProject_Library.Controllers
         }
         [HttpPost]
         [Route("")]
-        public ActionResult<int> AddNewBook(Book book)
+        public ActionResult<int> AddNewBook(BookReceive book)
         {
             book.Id = 0;
-            _dbcontext.Set<Book>().Add(book);
+            Book NewBook = new Book
+            {
+                Id = 0,
+                Title = book.Title,
+                Auther = book.Auther,
+                Description = book.Description,
+                EmployeeId = book.EmployeeId
+            };
+            _dbcontext.Set<Book>().Add(NewBook);
             _dbcontext.SaveChanges(); 
-            return Ok(book.Id);
+            return Ok(NewBook.Id);
         }
         [HttpPut]
         [Route("")]
-        public ActionResult UpdateBook(Book book)
+        public ActionResult UpdateBook(BookReceive book)
         {
             var LastBook = _dbcontext.Set<Book>().Find(book.Id);
             if(LastBook == null)return NotFound();
@@ -50,7 +57,7 @@ namespace FirstProject_Library.Controllers
             LastBook.Description = book.Description;
             _dbcontext.Set<Book>().Update(LastBook);
             _dbcontext.SaveChanges();
-            return Ok();
+            return Ok(LastBook);
         }
         [HttpDelete]
         [Route("{Id}")]

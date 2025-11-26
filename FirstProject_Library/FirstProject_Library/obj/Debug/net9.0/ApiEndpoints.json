@@ -29,7 +29,7 @@
     "Parameters": [
       {
         "Name": "book",
-        "Type": "FirstProject_Library.Model.Book",
+        "Type": "FirstProject_Library.Model.BookReceive",
         "IsRequired": true
       }
     ],
@@ -55,7 +55,7 @@
     "Parameters": [
       {
         "Name": "book",
-        "Type": "FirstProject_Library.Model.Book",
+        "Type": "FirstProject_Library.Model.BookReceive",
         "IsRequired": true
       }
     ],
@@ -87,6 +87,105 @@
     "Parameters": [
       {
         "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FirstProject_Library.Controllers.EmployeeController",
+    "Method": "Get",
+    "RelativePath": "Employee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FirstProject_Library.Model.Employee, FirstProject_Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstProject_Library.Controllers.EmployeeController",
+    "Method": "AddNewEmplyee",
+    "RelativePath": "Employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emp",
+        "Type": "FirstProject_Library.Model.EmployeeReceive",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstProject_Library.Controllers.EmployeeController",
+    "Method": "GetById",
+    "RelativePath": "Employee/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FirstProject_Library.Controllers.EmployeeController",
+    "Method": "UpdateEmplyee",
+    "RelativePath": "Employee/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emp",
+        "Type": "FirstProject_Library.Model.EmployeeReceive",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FirstProject_Library.Controllers.EmployeeController",
+    "Method": "DeletEmployee",
+    "RelativePath": "Employee/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
